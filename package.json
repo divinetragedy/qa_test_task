@@ -1,7 +1,7 @@
 {
-  "name": "untitled1",
-  "version": "1.0.0",
-  "description": "",
+  "name": "test_task",
+  "version": "0.0.1",
+  "description": "QA test",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
