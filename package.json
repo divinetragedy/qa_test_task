@@ -1,18 +1,21 @@
 {
-  "name": "test_task",
+  "name": "qa-test-task",
   "version": "0.0.1",
-  "description": "QA test",
-  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "playwright test",
+    "ctest": "playwright test --project=chromium",
+    "ftest": "playwright test --project=firefox",
+    "wtest": "playwright test --project=webkit"
   },
+  "keywords": [
+    "playwright",
+    "qa",
+    "test-task"
+  ],
+  "author": "divinetragedy",
+  "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
-    "@types/node": "^24.6.1",
-    "typescript": "^5.5.3"
-  },
-  "private": true,
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "@playwright/test": "^1.38.0"
+  }
 }
+
